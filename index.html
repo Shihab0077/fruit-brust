@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Burst</title>
+    <!-- Tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#F85559'
+              }
+            }
+          }
+        }
+      </script>
+      <!-- font family -->
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+        .font-lato{
+          font-family: 'Lato', sans-serif;
+        }
+      </style>
+</head>
+<body class="font-lato">
+    <header>
+        <!-- Nav bar -->
+        <nav class="max-w-screen-xl  my-6 mx-auto">
+        
+            <div class="navbar  bg-primary-color rounded-full px-14 py-8 flex text-white max-lg:hidden  ">
+                <div class="flex-1 ">
+                  <ul class="list-none flex  gap-10">
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Shop</li>
+                    <li>All fruits</li>
+                  </ul>
+                </div>
+                
+                <div class="gap-2" >
+                    <img src="./images/logo.png" alt="">
+                    <p class="text-3xl font-bold">Fruit Burst </p>
+                </div>
+                <div class=" gap-2 flex-1 justify-end">
+                  <div class="form-control">
+                    <input type="text" placeholder="Search here" class="input input-bordered border-none lg:pl-10 rounded-3xl w-28 md:w-auto" />
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- mobile view nav bar -->
+              <div class="flex justify-between items-center bg-base-100 lg:hidden ">
+                <div class="flex justify-center items-center gap-2  " >
+                  <img src="./images/logo.png" alt="">
+                  <p class="text-3xl font-bold">Fruit Burst </p>
+              </div>
+                <div >
+                  <div class="dropdown ">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </label>
+                  </div>
+                </div>
+                </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
